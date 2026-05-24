@@ -264,10 +264,73 @@
       <section id="projects" class="section">
         <div class="section__header">
           <span class="section__num">03</span>
-          <h2 class="section__title">Selected projects</h2>
+          <h2 class="section__title">Open-source &amp; selected work</h2>
         </div>
 
         <div class="projects">
+          <article class="project">
+            <div class="project__head">
+              <h3>payment-router-sim</h3>
+              <a class="project__link" href="https://github.com/sumitdahiya125/payment-router-sim" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+            </div>
+            <p>
+              A Rust simulator for payment-routing strategies — priority,
+              weighted-random, lowest-cost, and adaptive. Models fake
+              processors with configurable success rates, latencies, and
+              costs so you can test routing logic before shipping it.
+              Inspired by what runs under Hyperswitch.
+            </p>
+            <ul class="project__metrics">
+              <li><strong>4</strong> built-in strategies</li>
+              <li><strong>15</strong> tests passing</li>
+            </ul>
+            <div class="project__tags">
+              <span>Rust</span><span>Routing</span><span>Simulation</span><span>Payments</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__head">
+              <h3>idempotency-keys-rs</h3>
+              <a class="project__link" href="https://github.com/sumitdahiya125/idempotency-keys-rs" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+            </div>
+            <p>
+              HTTP idempotency-key middleware for Axum — the Stripe-style
+              mechanism that makes retries on mutating endpoints safe.
+              SHA-256 body fingerprinting, TTL-based response cache,
+              pluggable storage trait, in-memory backend included.
+            </p>
+            <div class="project__tags">
+              <span>Rust</span><span>Axum</span><span>HTTP</span><span>Tower</span><span>Payments</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__head">
+              <h3>webhook-relay</h3>
+              <a class="project__link" href="https://github.com/sumitdahiya125/webhook-relay" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+            </div>
+            <p>
+              A reliable webhook delivery service in Python/FastAPI — HMAC
+              signing (Stripe-style), exponential backoff with jitter,
+              per-attempt audit log, dead-letter queue, and a replay API.
+              Single-binary deploy, SQLite-backed, Postgres on the roadmap.
+            </p>
+            <ul class="project__metrics">
+              <li><strong>19</strong> tests passing</li>
+              <li><strong>HMAC</strong> request signing</li>
+            </ul>
+            <div class="project__tags">
+              <span>Python</span><span>FastAPI</span><span>SQLite</span><span>Reliability</span>
+            </div>
+          </article>
+
           <article class="project">
             <div class="project__head">
               <h3>AI-Powered Code Review Assistant</h3>
@@ -276,38 +339,17 @@
               </a>
             </div>
             <p>
-              Backend service that automates code reviews — exposes a FastAPI
-              over a CodeBERT model pipeline, with PostgreSQL for state and
-              Redis for hot-path caching. Flags bugs, security issues, and
-              anti-patterns in real time; thin React dashboard on top.
+              Backend service that automates code reviews — FastAPI over a
+              CodeBERT model pipeline, PostgreSQL for state, Redis for
+              hot-path caching. Flags bugs, security issues, and
+              anti-patterns in real time. Thin React dashboard on top.
             </p>
             <ul class="project__metrics">
               <li><strong>40%</strong> less manual review time</li>
-              <li><strong>25%</strong> measured code-quality lift</li>
+              <li><strong>25%</strong> code-quality lift</li>
             </ul>
             <div class="project__tags">
               <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>CodeBERT</span>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project__head">
-              <h3>Internal AuthN/AuthZ Service</h3>
-              <span class="project__badge">@ Amazon</span>
-            </div>
-            <p>
-              Backend service used by thousands of Amazon services for
-              authentication and authorization. Owned the control plane:
-              added fine-grained authz checks, CSRF validation, and a
-              self-service config API for service owners. Migrated the
-              control-plane APIs onto ECS Fargate.
-            </p>
-            <ul class="project__metrics">
-              <li><strong>95%</strong> fewer unauthorized accesses</li>
-              <li><strong>80%</strong> fewer SDE oncall hours</li>
-            </ul>
-            <div class="project__tags">
-              <span>Java</span><span>Spring</span><span>REST APIs</span><span>ECS Fargate</span><span>CDK</span>
             </div>
           </article>
 
@@ -334,18 +376,21 @@
 
           <article class="project">
             <div class="project__head">
-              <h3>PCI DSS Recertification</h3>
-              <span class="project__badge">@ Juspay</span>
+              <h3>Internal AuthN/AuthZ Service</h3>
+              <span class="project__badge">@ Amazon</span>
             </div>
             <p>
-              Drove the PCI DSS audit for Hyperswitch end-to-end — service-
-              level access controls, encryption-at-rest, and tamper-evident
-              audit logging built into payment-critical backend services.
-              Partnered with external assessors and shipped the code, not
-              just the policy.
+              Backend service used by thousands of Amazon services for
+              authentication and authorization. Owned the control plane:
+              fine-grained authz checks, CSRF validation, self-service
+              config API. Migrated the control-plane APIs onto ECS Fargate.
             </p>
+            <ul class="project__metrics">
+              <li><strong>95%</strong> fewer unauthorized accesses</li>
+              <li><strong>80%</strong> fewer SDE oncall hours</li>
+            </ul>
             <div class="project__tags">
-              <span>PCI DSS</span><span>Backend</span><span>Audit</span><span>Compliance</span>
+              <span>Java</span><span>Spring</span><span>REST APIs</span><span>ECS Fargate</span>
             </div>
           </article>
         </div>
