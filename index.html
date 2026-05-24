@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sumit Kumar — Software Development Engineer</title>
-    <meta name="description" content="Sumit Kumar — Software Development Engineer building payments infrastructure at Juspay. Previously at Amazon. Specializing in AWS, Kubernetes, and distributed systems." />
+    <title>Sumit Kumar — Backend Engineer</title>
+    <meta name="description" content="Sumit Kumar — Backend engineer at Juspay, working on Hyperswitch. Previously at Amazon. Java, Rust, Python, distributed systems." />
     <meta name="theme-color" content="#0d0c0a" />
 
     <meta property="og:title" content="Sumit Kumar — Software Engineer" />
@@ -41,17 +41,19 @@
 
         <div class="hero__copy">
           <p>
-            I'm a software engineer at
+            I'm a backend engineer at
             <a href="https://juspay.in" target="_blank" rel="noopener">Juspay</a>,
-            where I work on
+            working on
             <a href="https://hyperswitch.io" target="_blank" rel="noopener">Hyperswitch</a> —
-            an open-source payments orchestrator. Mostly I think about AWS,
-            Kubernetes, deploy pipelines, and the auth that gates every
-            request. Previously at <span class="muted-strong">Amazon</span>.
+            an open-source payments orchestrator written in Rust. I build
+            services, design APIs, and own them through production.
+            Previously at <span class="muted-strong">Amazon</span>, on
+            internal authorization systems.
           </p>
           <p>
-            Based in Bengaluru. I write some Rust, a lot of Terraform, and
-            occasionally a blog post.
+            Based in Bengaluru. Mostly Rust and Java these days, with detours
+            into Python. I like distributed systems, careful API design, and
+            code that's still readable two years later.
           </p>
         </div>
 
@@ -83,29 +85,40 @@
         <div class="about">
           <div class="about__copy">
             <p>
-              I'm a software engineer who likes the part of the stack that holds everything else
-              up — the AWS accounts, the Kubernetes clusters, the deploy pipelines, the auth that
-              gates every request. The boring stuff that becomes interesting the moment it breaks.
+              I'm a backend engineer. I build the services that handle
+              requests, design the data shapes they speak in, and own them
+              end-to-end through production. Most of my work lives in Java,
+              Rust, and Python.
             </p>
             <p>
-              At <strong>Juspay</strong>, I onboarded the Hyperswitch product to a new internal
-              platform, drove its PCI DSS recertification end-to-end, and shipped EKS optimizations
-              that cut compute spend by <strong>40%</strong> while holding <strong>99.99%</strong>
-              uptime. Before that, at <strong>Amazon</strong>, I hardened internal auth services and
-              built self-service tooling that saved <strong>80%</strong> of SDE oncall hours.
+              At <strong>Juspay</strong>, I work on
+              <strong>Hyperswitch</strong> — an open-source payments
+              orchestrator handling real merchant traffic. I've shipped
+              <strong>CUG (closed-user-group) auth flows</strong> serving
+              thousands of daily transactions, migrated the service onto a
+              new internal platform, and drove our PCI DSS recertification.
+              Along the way I tuned the EKS setup down <strong>40%</strong>
+              on compute while keeping <strong>99.99%</strong> uptime.
             </p>
             <p>
-              I care about clear ownership, instrumented systems, and writing the smallest change
-              that solves the problem. Happy to mentor, happier to ship.
+              Before that, at <strong>Amazon</strong>, I hardened the
+              internal AuthN/AuthZ service used by thousands of services
+              across the company — CSRF, fine-grained authz, self-service
+              backend features, and a migration of legacy control-plane APIs
+              onto a serverless backend.
+            </p>
+            <p>
+              I care about clear APIs, instrumented systems, and writing the
+              smallest change that solves the problem.
             </p>
           </div>
           <aside class="about__side">
             <h3>Quick facts</h3>
             <ul>
               <li><span>—</span> DTU '22, Software Engineering</li>
-              <li><span>—</span> 3+ yrs production AWS</li>
-              <li><span>—</span> PCI DSS contributor</li>
-              <li><span>—</span> Rust &amp; Go curious, TypeScript fluent</li>
+              <li><span>—</span> Backend across Java, Rust, Python</li>
+              <li><span>—</span> Owned services in PCI-DSS scope</li>
+              <li><span>—</span> Building on AWS for 3+ years</li>
               <li><span>—</span> Coffee &gt; tea (controversial)</li>
             </ul>
           </aside>
@@ -131,14 +144,14 @@
                 <p class="tl-place"><a href="https://juspay.in" target="_blank" rel="noopener">Juspay</a> · Bengaluru</p>
               </header>
               <ul>
-                <li>Onboarded <strong>Hyperswitch</strong> to a new internal platform, doubling release velocity through standardized deploy &amp; monitoring.</li>
-                <li>Drove <strong>PCI DSS</strong> recertification — access controls, encryption, audit logging across payment-critical systems.</li>
-                <li>Tuned multi-service <strong>AWS EKS</strong> setup: <strong>40% compute cost reduction</strong> while improving p99 latency.</li>
-                <li>Designed Closed User Group (CUG) flows for auth &amp; non-auth traffic, serving thousands of daily transactions.</li>
-                <li>Resolved 50+ critical production incidents; sustained <strong>99.99% uptime</strong>.</li>
+                <li>Designed and shipped <strong>Closed User Group (CUG)</strong> auth flows in Hyperswitch — backend routing &amp; auth middleware serving thousands of daily transactions with predictable failover.</li>
+                <li>Owned the migration of Hyperswitch services onto a new internal platform — service contracts, auth integration, and deploy automation. Release velocity went up <strong>2×</strong>.</li>
+                <li>Drove <strong>PCI DSS</strong> recertification end-to-end — access controls, encryption-at-rest, and tamper-evident audit logs across payment-critical services.</li>
+                <li>Resolved 50+ production incidents across services I owned; sustained <strong>99.99% uptime</strong>.</li>
+                <li>Tuned the multi-service EKS setup — <strong>40% compute cost reduction</strong> through resource right-sizing and standardized service templates.</li>
               </ul>
               <div class="tl-tags">
-                <span>AWS EKS</span><span>Terraform</span><span>Rust</span><span>PCI DSS</span><span>Observability</span>
+                <span>Rust</span><span>Backend APIs</span><span>Auth</span><span>PCI DSS</span><span>AWS EKS</span>
               </div>
             </div>
           </li>
@@ -154,13 +167,13 @@
                 <p class="tl-place">Amazon · Hyderabad</p>
               </header>
               <ul>
-                <li>Hardened Amazon's internal AuthN/AuthZ web platform — CSRF validation, fine-grained authz, dropping unauthorized access by <strong>95%</strong>.</li>
-                <li>Built a self-service portal that cut SDE ticket load by <strong>80%</strong>.</li>
-                <li>Migrated legacy control-plane APIs onto <strong>ECS Fargate</strong>, defining infra-as-code with AWS CDK.</li>
-                <li>Cut service downtime incidents by <strong>90%</strong> via canary deploys and chaos testing.</li>
+                <li>Hardened the backend of Amazon's internal AuthN/AuthZ service used by thousands of internal services — CSRF validation, fine-grained authz checks, and guard rails that dropped unauthorized access by <strong>95%</strong> and outages by <strong>90%</strong>.</li>
+                <li>Built a self-service backend feature on the auth platform — cut SDE ticket load by <strong>80%</strong> by letting service owners manage their own configs.</li>
+                <li>Re-architected legacy control-plane APIs onto a modern serverless backend (<strong>ECS Fargate</strong>), with AWS CDK as infra-as-code.</li>
+                <li>Cut service downtime by <strong>90%</strong> via canary deploys and chaos testing.</li>
               </ul>
               <div class="tl-tags">
-                <span>ECS Fargate</span><span>AWS CDK</span><span>Java</span><span>Canary</span><span>Chaos Eng</span>
+                <span>Java</span><span>Spring</span><span>REST APIs</span><span>ECS Fargate</span><span>AWS CDK</span>
               </div>
             </div>
           </li>
@@ -201,35 +214,59 @@
               </a>
             </div>
             <p>
-              Full-stack platform that automates code reviews — flags bugs, security issues, and
-              anti-patterns in real time. Backed by CodeBERT + transformer models with a
-              FastAPI/PostgreSQL/Redis stack and a React dashboard.
+              Backend service that automates code reviews — exposes a FastAPI
+              over a CodeBERT model pipeline, with PostgreSQL for state and
+              Redis for hot-path caching. Flags bugs, security issues, and
+              anti-patterns in real time; thin React dashboard on top.
             </p>
             <ul class="project__metrics">
               <li><strong>40%</strong> less manual review time</li>
               <li><strong>25%</strong> measured code-quality lift</li>
             </ul>
             <div class="project__tags">
-              <span>Python</span><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>Redis</span><span>CodeBERT</span>
+              <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>CodeBERT</span>
             </div>
           </article>
 
           <article class="project">
             <div class="project__head">
-              <h3>Hyperswitch Platform Onboarding</h3>
+              <h3>Internal AuthN/AuthZ Service</h3>
+              <span class="project__badge">@ Amazon</span>
+            </div>
+            <p>
+              Backend service used by thousands of Amazon services for
+              authentication and authorization. Owned the control plane:
+              added fine-grained authz checks, CSRF validation, and a
+              self-service config API for service owners. Migrated the
+              control-plane APIs onto ECS Fargate.
+            </p>
+            <ul class="project__metrics">
+              <li><strong>95%</strong> fewer unauthorized accesses</li>
+              <li><strong>80%</strong> fewer SDE oncall hours</li>
+            </ul>
+            <div class="project__tags">
+              <span>Java</span><span>Spring</span><span>REST APIs</span><span>ECS Fargate</span><span>CDK</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__head">
+              <h3>Hyperswitch — CUG &amp; Platform Migration</h3>
               <span class="project__badge">@ Juspay</span>
             </div>
             <p>
-              Migrated Hyperswitch — an open-source payment orchestrator handling production
-              merchant traffic — onto a new internal platform. Standardized EKS deploys,
-              observability, and on-call runbooks.
+              Shipped <strong>Closed User Group</strong> auth/routing flows
+              in Hyperswitch (Rust) — predictable routing for auth and
+              non-auth traffic across thousands of daily payments. Then led
+              the service migration onto a new internal platform: contracts,
+              auth integration, deploy automation.
             </p>
             <ul class="project__metrics">
               <li><strong>2×</strong> release velocity</li>
               <li><strong>99.99%</strong> sustained uptime</li>
             </ul>
             <div class="project__tags">
-              <span>EKS</span><span>ArgoCD</span><span>Helm</span><span>Prometheus</span><span>Grafana</span>
+              <span>Rust</span><span>Auth</span><span>Backend</span><span>Hyperswitch</span>
             </div>
           </article>
 
@@ -239,30 +276,14 @@
               <span class="project__badge">@ Juspay</span>
             </div>
             <p>
-              Drove the PCI DSS audit for Hyperswitch end-to-end — partnered with external assessors,
-              implemented access controls, encryption-at-rest, and tamper-evident audit logging
-              across every payment-critical service.
+              Drove the PCI DSS audit for Hyperswitch end-to-end — service-
+              level access controls, encryption-at-rest, and tamper-evident
+              audit logging built into payment-critical backend services.
+              Partnered with external assessors and shipped the code, not
+              just the policy.
             </p>
             <div class="project__tags">
-              <span>PCI DSS</span><span>IAM</span><span>KMS</span><span>Audit</span><span>Compliance</span>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project__head">
-              <h3>Auth Platform Hardening</h3>
-              <span class="project__badge">@ Amazon</span>
-            </div>
-            <p>
-              Strengthened the internal AuthN/AuthZ web platform serving thousands of Amazon
-              services. Added CSRF protection, granular authz, and self-service workflows.
-            </p>
-            <ul class="project__metrics">
-              <li><strong>95%</strong> fewer unauthorized accesses</li>
-              <li><strong>90%</strong> fewer outages</li>
-            </ul>
-            <div class="project__tags">
-              <span>Java</span><span>Spring</span><span>ECS</span><span>CDK</span>
+              <span>PCI DSS</span><span>Backend</span><span>Audit</span><span>Compliance</span>
             </div>
           </article>
         </div>
@@ -277,32 +298,34 @@
 
         <div class="skills">
           <div class="skill-group">
-            <h4>Cloud &amp; Infra</h4>
-            <div class="chips">
-              <span>AWS</span><span>EKS / Kubernetes</span><span>ECS Fargate</span>
-              <span>Terraform</span><span>AWS CDK</span><span>Docker</span><span>Helm</span>
-              <span>ArgoCD</span><span>Jenkins</span>
-            </div>
-          </div>
-          <div class="skill-group">
             <h4>Languages</h4>
             <div class="chips">
-              <span>Java</span><span>Rust</span><span>Python</span><span>TypeScript</span>
-              <span>JavaScript</span><span>C/C++</span><span>Ruby</span><span>Lua</span>
+              <span>Java</span><span>Rust</span><span>Python</span>
+              <span>TypeScript</span><span>JavaScript</span>
+              <span>C/C++</span><span>Ruby</span><span>Lua</span>
             </div>
           </div>
           <div class="skill-group">
-            <h4>Frameworks &amp; libs</h4>
+            <h4>Backend &amp; APIs</h4>
             <div class="chips">
-              <span>Spring</span><span>Rails</span><span>FastAPI</span><span>React</span>
-              <span>JUnit</span><span>TestNG</span><span>Hibernate</span>
+              <span>Spring</span><span>Rails</span><span>FastAPI</span>
+              <span>Hibernate</span><span>REST</span>
+              <span>JUnit</span><span>TestNG</span>
             </div>
           </div>
           <div class="skill-group">
-            <h4>Observability &amp; ops</h4>
+            <h4>Data &amp; storage</h4>
             <div class="chips">
-              <span>Prometheus</span><span>Grafana</span><span>CloudWatch</span>
-              <span>Canary deploys</span><span>Chaos testing</span><span>PCI DSS</span>
+              <span>PostgreSQL</span><span>Redis</span>
+              <span>Schema design</span><span>Caching</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Deploy &amp; ops</h4>
+            <div class="chips">
+              <span>AWS</span><span>EKS / Kubernetes</span><span>ECS Fargate</span>
+              <span>Terraform</span><span>AWS CDK</span><span>Docker</span>
+              <span>Prometheus</span><span>Grafana</span><span>Canary deploys</span>
             </div>
           </div>
         </div>
@@ -317,9 +340,9 @@
 
         <div class="contact">
           <p class="contact__lead">
-            My inbox is open for conversations about payments infra, platform
-            engineering, or making slow systems fast. Easiest way to reach me
-            is email — I usually reply within a day.
+            My inbox is open for backend roles, payments &amp; distributed
+            systems chat, or just trading notes on API design. Easiest way
+            to reach me is email — I usually reply within a day.
           </p>
 
           <div class="contact__links">
